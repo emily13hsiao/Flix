@@ -30,6 +30,7 @@
     //Set up refresh control.
     [self fetchMovies];
     self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(fetchMovies) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:self.refreshControl];
     
     
@@ -58,6 +59,7 @@
             }
             [self.tableView reloadData];
         }
+        [self.refreshControl endRefreshing];
     }];
     [task resume];
 }

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movies View Controller-->
+        <!--Today's Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesViewController" sceneMemberID="viewController">
@@ -55,6 +55,7 @@
                                             <outlet property="posterView" destination="qLf-lY-MVz" id="1R3-OP-u33"/>
                                             <outlet property="synopsisLabel" destination="Q3Q-6j-MU4" id="1YF-gJ-KoS"/>
                                             <outlet property="titleLabel" destination="4FX-9B-TJB" id="mLc-2A-g0u"/>
+                                            <segue destination="YOf-yv-HIa" kind="show" id="UvL-nD-yMs"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,7 +64,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hro-Fz-DeL"/>
+                    <navigationItem key="navigationItem" title="Today's Movies" id="hro-Fz-DeL"/>
                     <connections>
                         <outlet property="tableView" destination="mur-Nl-UTN" id="O4h-AT-oK3"/>
                     </connections>
@@ -71,6 +72,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970.39999999999998" y="686.80659670164926"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="J8l-6n-o2p">
+            <objects>
+                <viewController id="YOf-yv-HIa" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7jZ-hg-bLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j50-c6-CZm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTH-ig-p4Y">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="287"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-z5-Jd5">
+                                        <rect key="frame" x="8" y="117" width="107" height="184"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2019-06-27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxw-oH-9T4">
+                                        <rect key="frame" x="131" y="277" width="101" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-sS-fFb">
+                                        <rect key="frame" x="8" y="309" width="359" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">A synopsis is really nothing more than a short description of your screenplay. The typical synopsis consists of a plot summary of the screenplay on one side of a sheet of paper and usually contains no more than 400 words. It highlights your main characters and what they go through during your story. A good synopsis will focus a lot of attention to conflict and resolution. asdlkfajsldkfjalsdkfjalskdfjalsdkjfalskdfjalskdjfalksjdflaskdfjalksdfjalskdjfalskdjfalskdjfalskdjfalsdkfjasdkfjasd</string>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-Xb-1DW">
+                                        <rect key="frame" x="131" y="239" width="210" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9n2-fX-YMO"/>
+                    </view>
+                    <connections>
+                        <outlet property="backdropView" destination="LTH-ig-p4Y" id="sj8-8k-dUF"/>
+                        <outlet property="dateLabel" destination="Sxw-oH-9T4" id="QR3-bN-vuq"/>
+                        <outlet property="posterView" destination="OMe-z5-Jd5" id="aSg-8G-xTD"/>
+                        <outlet property="synopsisLabel" destination="lQi-sS-fFb" id="rJ3-R4-uZL"/>
+                        <outlet property="titleLabel" destination="uwl-Xb-1DW" id="leU-80-UL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3f-X2-4ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709.5999999999999" y="682.3088455772114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LeM-gI-jkW">

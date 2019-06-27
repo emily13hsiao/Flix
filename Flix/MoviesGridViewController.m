@@ -8,6 +8,7 @@
 
 #import "MoviesGridViewController.h"
 #import "MovieCollectionViewCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MoviesGridViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -23,6 +24,16 @@
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
+    
+    [self fetchMovies];
+    
+    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
+    layout.minimumInteritemSpacing = 5;
+    layout.minimumLineSpacing = 5;
+    CGFloat postersPerRow = 2;
+    CGFloat width = (self.collectionView.frame.size.width - (layout.minimumInteritemSpacing) * (postersPerRow - 1))/ postersPerRow;
+    CGFloat height = width * 1.5;
+    layout.itemSize = CGSizeMake(width, height);
     
 }
 

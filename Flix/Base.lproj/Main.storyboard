@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G7C-4x-inc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fWn-O0-pf6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -91,40 +91,21 @@
             </objects>
             <point key="canvasLocation" x="4" y="1287"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="vAT-8F-rTx">
+        <!--View Controller-->
+        <scene sceneID="BIx-TS-E3b">
             <objects>
-                <collectionViewController id="j6K-Kv-BNv" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CHg-ur-VUa">
+                <viewController id="V7z-AN-8rr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFe-oQ-p3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UYd-9F-gX0">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hjU-H6-JuP">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="j6K-Kv-BNv" id="zJn-JM-BJb"/>
-                            <outlet property="delegate" destination="j6K-Kv-BNv" id="brO-1Z-Ean"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="5uZ-HD-YyL"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WxT-0I-8LL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="kAc-Be-VuW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1TT-wp-ZK3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IaL-8f-8eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="1290"/>
+            <point key="canvasLocation" x="1028" y="1287"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="J8l-6n-o2p">
@@ -215,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="j6K-Kv-BNv" kind="relationship" relationship="rootViewController" id="rEB-12-tOw"/>
+                        <segue destination="V7z-AN-8rr" kind="relationship" relationship="rootViewController" id="W8a-cX-KfQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXu-5E-MmC" userLabel="First Responder" sceneMemberID="firstResponder"/>

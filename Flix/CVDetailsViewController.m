@@ -32,6 +32,8 @@
     NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
     NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
     [self.posterView setImageWithURL:posterURL];
+    [self.posterView.layer setBorderColor: [[UIColor whiteColor] CGColor]];
+    [self.posterView.layer setBorderWidth: 2.0];
     
     //Load backdrop image.
     NSString *backdropURLString = self.movie[@"backdrop_path"];
@@ -48,6 +50,8 @@
     [self.titleLabel sizeToFit];
     [self.synopsisLabel sizeToFit];
     [self.dateLabel sizeToFit];
+    
+    
 }
 
 /*

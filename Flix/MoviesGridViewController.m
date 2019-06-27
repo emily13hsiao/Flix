@@ -7,6 +7,7 @@
 //
 
 #import "MoviesGridViewController.h"
+#import "MovieCollectionViewCell.h"
 
 @interface MoviesGridViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -43,6 +44,7 @@
             NSLog(@"%@", dataDictionary);
             
             self.movies = dataDictionary[@"results"];
+            [self.collectionView reloadData];
             
         }
     }];
@@ -61,7 +63,19 @@
 */
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    <#code#>
+    
+    MovieCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MovieCollectionViewCell" forIndexPath:indexPath];
+    
+    NSDictionary *movie = self.movies[indexPath.item];
+    
+    NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
+    NSString *posterURLString = movie[@"poster_path"];
+    NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
+    NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
+    
+    cell.posterView.image = nil;
+    [cell.posterView setImageWithURL: posterURL];
+    return cell;
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

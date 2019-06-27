@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="4" y="1287"/>
         </scene>
-        <!--View Controller-->
+        <!--Movies Grid View Controller-->
         <scene sceneID="BIx-TS-E3b">
             <objects>
-                <viewController id="V7z-AN-8rr" sceneMemberID="viewController">
+                <viewController id="V7z-AN-8rr" customClass="MoviesGridViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MFe-oQ-p3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,12 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-vT-jCt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="235"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
@@ -125,6 +131,9 @@
                         <viewLayoutGuide key="safeArea" id="kAc-Be-VuW"/>
                     </view>
                     <navigationItem key="navigationItem" id="1TT-wp-ZK3"/>
+                    <connections>
+                        <outlet property="collectionView" destination="IMS-JP-hZ6" id="cuz-sQ-PqX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaL-8f-8eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

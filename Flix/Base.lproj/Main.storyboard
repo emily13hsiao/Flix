@@ -207,7 +207,7 @@
         <scene sceneID="LeM-gI-jkW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G7C-4x-inc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" id="zWy-Gt-aMs"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="zWy-Gt-aMs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z1a-Lx-Eei">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -222,11 +222,11 @@
             </objects>
             <point key="canvasLocation" x="4" y="487"/>
         </scene>
-        <!--Item-->
+        <!--Collection View-->
         <scene sceneID="q5R-Sh-u2l">
             <objects>
                 <navigationController id="GYU-uH-Tgm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="e2A-Mv-XNh"/>
+                    <tabBarItem key="tabBarItem" title="Collection View" image="reel_tabbar_icon" id="e2A-Mv-XNh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jBU-W6-Acg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -240,4 +240,8 @@
             <point key="canvasLocation" x="1029" y="487"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="reel_tabbar_icon" width="25" height="25"/>
+    </resources>
 </document>

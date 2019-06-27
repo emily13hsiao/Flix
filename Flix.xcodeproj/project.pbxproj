@@ -23,6 +23,7 @@
 		FCE316DB22C42ADF003E3BE1 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE316DA22C42ADF003E3BE1 /* DetailsViewController.m */; };
 		FCE316E422C44587003E3BE1 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE316E322C44587003E3BE1 /* MoviesGridViewController.m */; };
 		FCE316EA22C44B20003E3BE1 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE316E922C44B20003E3BE1 /* MovieCollectionViewCell.m */; };
+		FCE316EE22C57227003E3BE1 /* CVDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE316ED22C57227003E3BE1 /* CVDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		FCE316E322C44587003E3BE1 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
 		FCE316E822C44B20003E3BE1 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		FCE316E922C44B20003E3BE1 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		FCE316EC22C57227003E3BE1 /* CVDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVDetailsViewController.h; sourceTree = "<group>"; };
+		FCE316ED22C57227003E3BE1 /* CVDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CVDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				FCE316D022C40000003E3BE1 /* MoviesViewController.m */,
 				FCE316A122C3EB2F003E3BE1 /* ViewController.m */,
 				FCE316A322C3EB2F003E3BE1 /* Main.storyboard */,
+				FCE316EC22C57227003E3BE1 /* CVDetailsViewController.h */,
+				FCE316ED22C57227003E3BE1 /* CVDetailsViewController.m */,
 				FCE316E222C44587003E3BE1 /* MoviesGridViewController.h */,
 				FCE316E322C44587003E3BE1 /* MoviesGridViewController.m */,
 				FCE316D222C4019F003E3BE1 /* ViewController.h */,
@@ -421,6 +426,7 @@
 				FCE316D522C41D61003E3BE1 /* MovieCell.m in Sources */,
 				FCE316AD22C3EB30003E3BE1 /* main.m in Sources */,
 				FCE316EA22C44B20003E3BE1 /* MovieCollectionViewCell.m in Sources */,
+				FCE316EE22C57227003E3BE1 /* CVDetailsViewController.m in Sources */,
 				FCE316DB22C42ADF003E3BE1 /* DetailsViewController.m in Sources */,
 				FCE3169F22C3EB2F003E3BE1 /* AppDelegate.m in Sources */,
 				FCE316D122C40000003E3BE1 /* MoviesViewController.m in Sources */,

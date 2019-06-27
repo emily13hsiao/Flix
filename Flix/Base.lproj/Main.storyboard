@@ -132,6 +132,7 @@
                                         <size key="customSize" width="182" height="235"/>
                                         <connections>
                                             <outlet property="posterView" destination="ln6-vT-jCt" id="Kdb-fM-ZuT"/>
+                                            <segue destination="jYf-5D-5Z5" kind="push" id="R7u-0R-MT0"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -208,6 +209,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3f-X2-4ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4" y="2054"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="Z0B-CS-cYK">
+            <objects>
+                <viewController id="jYf-5D-5Z5" customClass="CVDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QrO-A2-tyK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7U-2q-geJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mkd-Jl-sva">
+                                <rect key="frame" x="5" y="185" width="110" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH2-ad-NLi">
+                                <rect key="frame" x="131" y="287" width="214" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-fH-NZw">
+                                <rect key="frame" x="8" y="384" width="359" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A synopsis is really nothing more than a short description of your screenplay. The typical synopsis consists of a plot summary of the screenplay on one side of a sheet of paper and usually contains no more than 400 words. It highlights your main characters and what they go through during your story. A good synopsis will focus a lot of attention to conflict and resolution. asdlkfajsldkfjalsdkfjalskdfjalsdkjfalskdfjalskdjfalksjdflaskdfjalksdfjalskdjfalskdjfalskdjfalskdjfalsdkfjasdkfjasd</string>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2019-06-27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-5u-ba7">
+                                <rect key="frame" x="131" y="352" width="101" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="d1h-H8-gT4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="stj-c0-TDg"/>
+                    <connections>
+                        <outlet property="backdropView" destination="U7U-2q-geJ" id="cR0-uK-faz"/>
+                        <outlet property="dateLabel" destination="Ga1-5u-ba7" id="tTe-UQ-PoQ"/>
+                        <outlet property="posterView" destination="Mkd-Jl-sva" id="8YA-Vj-dmz"/>
+                        <outlet property="synopsisLabel" destination="WTn-fH-NZw" id="zNp-dG-3ba"/>
+                        <outlet property="titleLabel" destination="aH2-ad-NLi" id="KGw-dr-zGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbM-kY-JBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.5999999999999" y="2051.4242878560722"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="LeM-gI-jkW">

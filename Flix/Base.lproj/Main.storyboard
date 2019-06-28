@@ -83,7 +83,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ti-LN-fhS">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search for movies..." translatesAutoresizingMaskIntoConstraints="NO" id="2Ti-LN-fhS">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="4" y="1286.8065967016494"/>
         </scene>
-        <!--Movies Grid View Controller-->
+        <!--Poster View-->
         <scene sceneID="BIx-TS-E3b">
             <objects>
                 <viewController id="V7z-AN-8rr" customClass="MoviesGridViewController" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kAc-Be-VuW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1TT-wp-ZK3"/>
+                    <navigationItem key="navigationItem" title="Poster View" id="1TT-wp-ZK3"/>
                     <connections>
                         <outlet property="collectionView" destination="IMS-JP-hZ6" id="cuz-sQ-PqX"/>
                     </connections>
@@ -169,32 +169,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTH-ig-p4Y">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="287"/>
+                                        <rect key="frame" x="0.0" y="-5" width="375" height="287"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMe-z5-Jd5">
-                                        <rect key="frame" x="8" y="117" width="107" height="184"/>
+                                        <rect key="frame" x="8" y="177" width="107" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2019-06-27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxw-oH-9T4">
-                                        <rect key="frame" x="131" y="277" width="101" height="24"/>
+                                        <rect key="frame" x="123" y="327" width="101" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-sS-fFb">
-                                        <rect key="frame" x="8" y="309" width="359" height="286"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-Xb-1DW">
+                                        <rect key="frame" x="123" y="290" width="210" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">A synopsis is really nothing more than a short description of your screenplay. The typical synopsis consists of a plot summary of the screenplay on one side of a sheet of paper and usually contains no more than 400 words. It highlights your main characters and what they go through during your story. A good synopsis will focus a lot of attention to conflict and resolution. asdlkfajsldkfjalsdkfjalskdfjalsdkjfalskdfjalskdjfalksjdflaskdfjalksdfjalskdjfalskdjfalskdjfalskdjfalsdkfjasdkfjasd</string>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Title Title Title Title Title Title Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-Xb-1DW">
-                                        <rect key="frame" x="131" y="239" width="210" height="43"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-sS-fFb">
+                                        <rect key="frame" x="8" y="369" width="359" height="187"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="20"/>
+                                        <string key="text">A synopsis is really nothing more than a short description of your screenplay. The typical synopsis consists of a plot summary of the screenplay on one side of a sheet of paper and usually contains no more than 400 words. It highlights your main characters and what they go through during your story. A good synopsis will focus a lot of attention to conflict and resolution. asdlkfajsldkfjalsdkfjalskdfjalsdkjfalskdfjalskdjfalksjdflaskdfjalksdfjalskdjfalskdjfalskdjfalskdjfalsdkfjasdkfjasd</string>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3f-X2-4ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="2054"/>
+            <point key="canvasLocation" x="4" y="2053.223388305847"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="Z0B-CS-cYK">

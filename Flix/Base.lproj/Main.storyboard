@@ -135,9 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IMS-JP-hZ6">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IMS-JP-hZ6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="661"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="BJf-og-Ntc">
                                     <size key="itemSize" width="181" height="235"/>
@@ -153,12 +152,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="182" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-vT-jCt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="235"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-vT-jCt">
+                                                    <rect key="frame" x="8" y="0.0" width="166" height="235"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ln6-vT-jCt" secondAttribute="trailing" constant="8" id="5bz-OS-4aM"/>
+                                            <constraint firstItem="ln6-vT-jCt" firstAttribute="top" secondItem="053-yE-K7z" secondAttribute="top" id="I40-A6-iYS"/>
+                                            <constraint firstAttribute="trailing" secondItem="ln6-vT-jCt" secondAttribute="trailing" constant="8" id="JCd-fF-QUQ"/>
+                                            <constraint firstItem="ln6-vT-jCt" firstAttribute="leading" secondItem="053-yE-K7z" secondAttribute="leading" constant="8" id="fgS-Ah-DIo"/>
+                                            <constraint firstItem="ln6-vT-jCt" firstAttribute="leading" secondItem="053-yE-K7z" secondAttribute="leading" constant="8" id="qAp-Jp-gdc"/>
+                                            <constraint firstAttribute="bottom" secondItem="ln6-vT-jCt" secondAttribute="bottom" id="tRt-Ld-K89"/>
+                                        </constraints>
                                         <size key="customSize" width="182" height="235"/>
                                         <connections>
                                             <outlet property="posterView" destination="ln6-vT-jCt" id="Kdb-fM-ZuT"/>
@@ -169,6 +175,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IMS-JP-hZ6" firstAttribute="bottom" secondItem="kAc-Be-VuW" secondAttribute="bottom" constant="43" id="do0-2s-c2Q"/>
+                            <constraint firstItem="kAc-Be-VuW" firstAttribute="trailing" secondItem="IMS-JP-hZ6" secondAttribute="trailing" id="eDa-t4-Adh"/>
+                            <constraint firstItem="IMS-JP-hZ6" firstAttribute="leading" secondItem="kAc-Be-VuW" secondAttribute="leading" id="eLJ-uw-yng"/>
+                            <constraint firstItem="kAc-Be-VuW" firstAttribute="top" secondItem="IMS-JP-hZ6" secondAttribute="top" constant="64" id="ker-Hj-nBB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kAc-Be-VuW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Poster View" id="1TT-wp-ZK3"/>

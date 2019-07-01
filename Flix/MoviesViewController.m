@@ -34,6 +34,8 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
     //Set up refresh control.
     [self.activityIndicatorView startAnimating];
     [self fetchMovies];
